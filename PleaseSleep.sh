@@ -114,14 +114,15 @@ then
 		echo "/usr/sbin/networksetup setairportpower en0 off" >> ~/.sleep
 		echo "killall Safari" >> ~/.sleep
     echo "killall prl_client_app" >> ~/.sleep
-    echo " killall WeChat" >> ~/.sleep
+    echo "killall WeChat" >> ~/.sleep
     echo "killall QQ" >> ~/.sleep
-    echo " killall Finder" >> ~/.sleep
-    echo " killall Xcode" >> ~/.sleep
-    echo " killall Terminal" >> ~/.sleep
-    echo " killall java" >> ~/.sleep
-    echo " killall python" >> ~/.sleep
-    echo " kill -9 $(ps aux | grep "Activity Monitor" | awk '{print $2}')" >> ~/.sleep
+    echo "killall Finder" >> ~/.sleep
+    echo "killall Xcode" >> ~/.sleep
+    echo "killall Terminal" >> ~/.sleep
+    echo "killall java" >> ~/.sleep
+    echo "killall python" >> ~/.sleep
+    echo "killall firefox” >> ~/.sleep
+    echo "kill -9 $(ps aux | grep "Activity Monitor" | awk '{print $2}')" >> ~/.sleep
 		echo `date` `/usr/sbin/networksetup getairportpower en0` >> /tmp/sleep.log" >> ~/.sleep
 	echo "Done."
 	echo "(Press ENTER key to continue.)"
